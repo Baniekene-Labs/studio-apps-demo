@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Sécurité : la page n'a le droit de charger aucune ressource externe, aucun script, aucun formulaire -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Baniekene Labs</title>
+  <meta name="description" content="Baniekene Labs conçoit, développe et exploite des applications et des solutions numériques grâce à l'intelligence artificielle.">
+ 
+  <style>
+    /* ===== 1. Couleurs et réglages de base ===== */
+    :root {
+      --fond: #f7f8fa;
+      --fond-carte: #ffffff;
+      --texte: #1a1d24;
+      --texte-doux: #5a6170;
+      --accent: #2b4eff;
+      --bordure: #e3e6ec;
+    }
+ 
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+ 
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--fond);
+      color: var(--texte);
+      line-height: 1.6;
+    }
+ 
+    .conteneur {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+ 
+    /* ===== 2. En-tête : nom + mission ===== */
+    .entete {
+      background: var(--texte);
+      color: #ffffff;
+      padding: 96px 0 80px;
+    }
+ 
+    .entete .etiquette {
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #9fb0ff;
+      margin-bottom: 16px;
+    }
+ 
+    .entete h1 {
+      font-size: clamp(2.4rem, 7vw, 4rem);
+      line-height: 1.1;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+ 
+    .entete .mission {
+      font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+      max-width: 680px;
+      color: #d3d7e0;
+    }
+ 
+    /* ===== 3. Section des projets ===== */
+    .projets {
+      padding: 72px 0 88px;
+    }
+ 
+    .projets h2 {
+      font-size: clamp(1.6rem, 4vw, 2.1rem);
+      margin-bottom: 8px;
+      letter-spacing: -0.01em;
+    }
+ 
+    .projets .intro {
+      color: var(--texte-doux);
+      margin-bottom: 40px;
+    }
+ 
+    /* Grille : 3 colonnes sur ordinateur, 1 colonne sur smartphone */
+    .grille {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+ 
+    .carte {
+      background: var(--fond-carte);
+      border: 1px solid var(--bordure);
+      border-top: 4px solid var(--accent);
+      border-radius: 12px;
+      padding: 28px;
+    }
+ 
+    .carte .numero {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+ 
+    .carte h3 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+ 
+    .carte p {
+      color: var(--texte-doux);
+    }
+ 
+    /* ===== 4. Pied de page ===== */
+    .pied {
+      border-top: 1px solid var(--bordure);
+      padding: 24px 0;
+      font-size: 0.9rem;
+      color: var(--texte-doux);
+    }
+ 
+    /* ===== 5. Ajustements pour petits écrans ===== */
+    @media (max-width: 600px) {
+      .entete { padding: 64px 0 56px; }
+      .projets { padding: 48px 0 64px; }
+      .carte { padding: 22px; }
+    }
+  </style>
+</head>
+ 
+<body>
+ 
+  <!-- En-tête : nom et mission, visibles dès l'ouverture -->
+  <header class="entete">
+    <div class="conteneur">
+      <span class="etiquette">Studio d'applications et de solutions IA</span>
+      <h1>Baniekene Labs</h1>
+      <p class="mission">
+        Concevoir, développer et exploiter des applications et des solutions numériques
+        grâce à l'intelligence artificielle.
+      </p>
+    </div>
+  </header>
+ 
+  <!-- Contenu principal : les trois projets -->
+  <main class="projets">
+    <div class="conteneur">
+      <h2>Nos projets</h2>
+      <p class="intro">Trois projets concrets, menés de la conception à l'exploitation.</p>
+ 
+      <div class="grille">
+        <article class="carte">
+          <p class="numero">01</p>
+          <h3>Saphir Car Solutions</h3>
+          <p>Automatisation des processus administratifs de location de véhicules VTC.</p>
+        </article>
+ 
+        <article class="carte">
+          <p class="numero">02</p>
+          <h3>VTC Booking</h3>
+          <p>Développement d'une application web de réservation pour chauffeurs VTC.</p>
+        </article>
+ 
+        <article class="carte">
+          <p class="numero">03</p>
+          <h3>À l'affût Ray</h3>
+          <p>Création d'un personnage numérique et production de contenus assistée par intelligence artificielle.</p>
+        </article>
+      </div>
+    </div>
+  </main>
+ 
+  <!-- Pied de page -->
+  <footer class="pied">
+    <div class="conteneur">
+      <p>© 2026 Baniekene Labs</p>
+    </div>
+  </footer>
+ 
+</body>
+</html>
+ 
